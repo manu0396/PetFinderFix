@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splash_fragment">
+
+    <fragment
+        android:id="@+id/splash_fragment"
+        android:name="com.example.mvvm_retrofit_imagesearchapp.ui.splash.SplashFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.mvvm_retrofit_imagesearchapp.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.mvvm_retrofit_imagesearchapp.ui.gallery.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_galleryFragment_to_detailFragment"
+            app:destination="@id/detailFragment">
+            <argument
+                android:name="photo"
+                app:argType="com.example.mvvm_retrofit_imagesearchapp.data.UnsplashPhoto" />
+        </action>>
+        <action
+            android:id="@+id/action_galleryFragment_to_diaryFragment"
+            app:destination="@id/diaryFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.mvvm_retrofit_imagesearchapp.ui.detail.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="photo"
+            app:argType="com.example.mvvm_retrofit_imagesearchapp.data.UnsplashPhoto" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="com.example.mvvm_retrofit_imagesearchapp.ui.diary.DiaryFragment"
+        android:label="Diary">
+        <action
+            android:id="@+id/action_diaryFragment_to_detailFragmentAdd"
+            app:destination="@id/detailFragmentAdd">
+            <argument
+                android:name="room_photo"
+                app:argType="com.example.mvvm_retrofit_imagesearchapp.room.RoomResponse" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragmentAdd"
+        android:name="com.example.mvvm_retrofit_imagesearchapp.ui.diary.DetailFragmentAdd"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail_add">
+        <argument
+            android:name="room_photo"
+            app:argType="com.example.mvvm_retrofit_imagesearchapp.room.RoomResponse" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mvvm_retrofit_imagesearchapp.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PetFinder</string>
+    <string name="wrong_username_or_password">Usuario y/o contraseña incorrecta</string>
+    <string name="no_matching_pwds">Contraseñas no coicidentes</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="pwd">Password</string>
+    <string name="enter">Entrar</string>
+    <string name="register_form">Formulario de registro</string>
+    <string name="mail">Correo electrónico</string>
+    <string name="write_pwd_again">Confirmar password</string>
+    <string name="register">Registrarse</string>
+    <string name="welcome_messages">Welcome %1$s!</string>
+</resources>

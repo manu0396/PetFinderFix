@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="OutlineGoogleButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="color">@color/light_green</item>
+        <item name="strokeColor">@color/dark_green</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:radius">8dp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+        <item name="android:drawableRight">@drawable/googleg_standard_color_18</item>
+        <item name="android:padding">12dp</item>
+    </style>
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">#FFC107</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <!-- Used for the background -->
+        <item name="android:background">#202732</item>
+    </style>
+
+
+        <style name="OutlineButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+            <item name="color">@color/light_green</item>
+            <item name="strokeColor">@color/dark_green</item>
+            <item name="strokeWidth">2dp</item>
+            <item name="backgroundColor">@color/white</item>
+            <item name="android:radius">8dp</item>
+            <item name="textAllCaps">true</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+            <item name="android:padding">12dp</item>
+        </style>
+
+        <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+            <item name="color">@color/dark_green</item>
+            <item name="strokeWidth">0dp</item>
+            <item name="android:radius">8dp</item>
+            <item name="textAllCaps">true</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+            <item name="android:padding">12dp</item>
+        </style>
+
+        <style name="TitleDialogTextViewStyle" parent="Widget.AppCompat.TextView">
+            <item name="textAllCaps">true</item>
+            <item name="android:textColor">@color/light_green</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textSize">22sp</item>
+            <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        </style>
+
+        <style name="TitleDialogSimpleTextViewStyle" parent="Widget.AppCompat.TextView">
+            <item name="textAllCaps">false</item>
+            <item name="android:textColor">@color/dark_green</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textSize">22sp</item>
+            <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        </style>
+
+        <style name="ErrorTextViewStyle" parent="Widget.AppCompat.TextView">
+            <item name="textAllCaps">false</item>
+            <item name="android:textColor">@color/red</item>
+            <item name="android:textStyle">normal</item>
+            <item name="android:textSize">12sp</item>
+            <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">textStart</item>
+            <item name="android:drawableLeft">@drawable/ic_warning</item>
+            <item name="android:drawablePadding">12dp</item>
+        </style>
+
+        <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <item name="colorPrimary">@color/dark_green</item>
+            <item name="android:textColor">@color/black</item>
+            <item name="boxStrokeColor">@color/dark_green</item>
+            <item name="boxStrokeWidth">0dp</item>
+            <item name="boxStrokeWidthFocused">2dp</item>
+            <item name="boxCornerRadiusBottomEnd">8dp</item>
+            <item name="boxCornerRadiusBottomStart">8dp</item>
+            <item name="boxCornerRadiusTopEnd">8dp</item>
+            <item name="boxCornerRadiusTopStart">8dp</item>
+            <item name="boxBackgroundColor">@color/light_green</item>
+            <item name="android:textColorHint">@color/dark_gray</item>
+            <item name="hintTextColor">@color/dark_green</item>
+            <item name="endIconTint">@color/super_dark_green</item>
+        </style>
+
+        <style name="TextInputEditTextStyle">
+            <item name="android:textSize">14dp</item>
+            <item name="android:textColor">@color/black</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+        <style name="TextOptionTextViewStyle">
+            <item name="android:textColor">@color/light_burgundy</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textStyle">normal</item>
+            <item name="fontWeight">400</item>
+            <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+
+        </style>
+
+        <style name="TextJournalTextViewStyle">
+            <item name="android:textColor">@color/super_dark_green</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:textStyle">normal</item>
+            <item name="fontWeight">600</item>
+            <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+
+        </style>
+
+        <style name="TextItalicTextViewStyle">
+            <item name="android:textColor">@color/light_burgundy</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:textStyle">italic</item>
+            <item name="fontWeight">600</item>
+            <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+
+        </style>
+
+        <style name="TextDateTextViewStyle">
+            <item name="android:textColor">@color/super_dark_green</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textStyle">normal</item>
+            <item name="fontWeight">600</item>
+            <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+        </style>
+
+        <style name="TextMapTextViewStyle">
+            <item name="android:textColor">@color/burgundy</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textStyle">normal</item>
+            <item name="fontWeight">600</item>
+            <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+
+        </style>
+
+
+        <style name="TextManyTextViewStyle">
+            <item name="android:textColor">@color/black</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textStyle">normal</item>
+            <item name="fontWeight">600</item>
+            <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+
+        </style>
+
+        <style name="TextTitleHomeTextViewStyle">
+            <item name="android:textColor">@color/burgundy</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="fontWeight">600</item>
+            <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+        </style>
+
+        <style name="TextHomeTextViewStyle">
+            <item name="android:textColor">@color/light_burgundy</item>
+            <item name="android:textSize">14sp</item>
+            <item name="android:textStyle">normal</item>
+            <item name="fontWeight">400</item>
+            <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+        </style>
+
+        <style name="CopyrightViewStyle">
+            <item name="android:textColor">@color/super_dark_green</item>
+            <item name="android:textSize">10sp</item>
+            <item name="android:textStyle">normal</item>
+            <item name="fontWeight">200</item>
+            <item name="android:elegantTextHeight" tools:targetApi="lollipop">true</item>
+        </style>
+
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "63344293973",
+    "project_id": "pruebavass-2b287",
+    "storage_bucket": "pruebavass-2b287.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63344293973:android:d5cf6e6914a3e0fb03bcdc",
+        "android_client_info": {
+          "package_name": "com.example.mvvm_retrofit_imagesearchapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63344293973-biui66chl85uubdeieo94sl7od6bq19k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpCssbD9wNBYaf92rwQs8gy9_vajY5Crg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63344293973-biui66chl85uubdeieo94sl7od6bq19k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
